@@ -325,6 +325,12 @@ set @resources='
   <LocaleResource Name="Admin.Orders.Shipments.List.County.Hint">
     <Value>Search by a specific county / region.</Value>
   </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.ForceSslForAllPages">
+    <Value></Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.Configuration.Settings.GeneralCommon.ForceSslForAllPages.Hint">
+    <Value></Value>
+  </LocaleResource>
 </Language>
 '
 
