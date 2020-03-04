@@ -6,6 +6,7 @@ using Autofac;
 using Autofac.Builder;
 using Autofac.Core;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.Extensions.Caching.Memory;
 using Nop.Core;
 using Nop.Core.Caching;
 using Nop.Core.Configuration;
@@ -113,6 +114,7 @@ namespace Nop.Web.Framework.Infrastructure
             {
                 builder.RegisterType<MemoryCacheManager>()
                     .As<ILocker>()
+                    .As<IMemoryCache>()
                     .As<IStaticCacheManager>()
                     .SingleInstance();
             }
